@@ -1,0 +1,21 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "cypressproject",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "headed": "npm run test -- --headed",
+    "electron": "npm run test -- --browser electron",
+    "chrome": "npm run test -- --browser chrome",
+    "firefox": "npm run test -- --browser firefox",
+    "group1": "npm run test -- --spec \"cypress/integration/examples/group1/*"
+  },
+  "author": "akhila",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.1.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}
